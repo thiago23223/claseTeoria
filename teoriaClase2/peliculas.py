@@ -29,7 +29,7 @@ def over_average(movies_duration):
     average = average_calculation(movies_duration)
     over = 0 #elementos q superen el promedio
     for elem in  movies_duration:
-        if average > elem:
+        if average < elem:
             over +=1
     return over
 
