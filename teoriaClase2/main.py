@@ -1,13 +1,12 @@
-#diccionario de las peliculas argentinas candidatas a mejor pelicula extranjera
+from peliculas import input_movies,average_calculation,over_average
+ 
+duracion_peliculas = input_movies()
+print("DURACIONES DE LAS PELICULAS : ",duracion_peliculas)
+promedio = average_calculation(duracion_peliculas)
+print(" EL PROMEDIO DE LAS DURACIONES INGRESADAS ES DE : ", promedio)
+pasan_promedio = over_average(duracion_peliculas)
+print(" LA CANTIDAD DE PELICULAS QUE SUPERAN EL PROMEDIO ES DE : ", pasan_promedio)
 
-peliculas = {
-    'La tregua': [1975, 'Nominada', 108],
-    'Camila': [1986, 'Nominada', 105],
-    'La historia oficial': [1986, 'Ganadora', 112],
-    'Tango, no me dejes nunca': [1999, 'Nominada', 115],
-    'El hijo de la novia': [2002, 'Nominada', 123],
-    'El secreto de sus ojos': [2010, 'Ganadora', 129],
-    'Relatos salvajes': [2015, 'Nominada', 122],
-    'Argentina, 1985': [2023, 'Nominada', 140]
-}
+
+
 
